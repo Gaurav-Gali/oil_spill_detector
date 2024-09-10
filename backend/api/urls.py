@@ -1,8 +1,8 @@
 from django.urls import path
 # Views
 from .views import (
-    TestView
+    ShipData
 )
 urlpatterns = [
-    path("" , TestView.as_view() , name="TestView"),
+    path("" , ShipData.as_view() , name="TestView"),
 ]
