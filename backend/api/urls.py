@@ -4,5 +4,5 @@ from .views import (
     ShipData
 )
 urlpatterns = [
-    path("" , ShipData.as_view() , name="TestView"),
+    path("<str:limit>/" , ShipData.as_view() , name="TestView"),
 ]
